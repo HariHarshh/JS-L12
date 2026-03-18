@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:blanchedalmond;
+    }
+    label{
+        font-size:30px;
+        color:blueviolet;
+    }
+    input{
+        font-size:20px;
+    }
+    
+        
+    
+</style>
+<body>
+    <form name="form1" onsubmit="validate1()">
+        <label>Enter your name</label><br>
+        <input type="text" name="name1"><br><br>
+         <input type="submit" name="Submit">
+         <p id="msg"></p>
+    </form>
+
+    <script>
+function validate1() {
+var n= document. forms ["form1"] ["name1"]. value;
+if(n == "") {
+alert("please write your name");
+return false;
+}
+else
+{document.write("Your name is saved");}
+
+}
+
+</script>
+</body>
+</html>
